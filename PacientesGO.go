@@ -97,9 +97,9 @@ func main() {
 		//switch opcion2 {
 		fmt.Println(inpt)
 
-		switch inpt {
+		switch input {
 
-		case 1:
+		case "1":
 			fmt.Println("Entró al CASE 1")
 			//LEEREMOS EL NOMBRE DEL PACIENTE
 			fmt.Println("Ingrese nombre del paciente: \n")
@@ -141,14 +141,17 @@ func main() {
 			//i = 0
 			parar++
 
-		case 2:
+		case "2":
 			fmt.Println("Entró al CASE 2")
 			contador := cola.contador
 			for i := 0; i < contador; i++ {
 				fmt.Println(cola.atender())
 			}
 			//i = 2
-			parar--
+			parar++
+			
+		case "3":
+			os.Exit(1)
 
 		default:
 			fmt.Println("No seleccionó una opción correcta.")
