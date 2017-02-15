@@ -146,7 +146,7 @@ func main() {
 
 		case "2":
 			fmt.Println("Entró al CASE 2 \n")
-			fmt.Println("LISTANDO PACIENTES \n")
+			fmt.Println("----------LISTANDO PACIENTES---------- \n")
 			contador := cola.contador
 			for i := 0; i < contador; i++ {
 				fmt.Println(cola.atender())
