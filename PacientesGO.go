@@ -81,7 +81,10 @@ func main() {
 	parar := 1
 	var input string
 	for i < parar {
-		fmt.Println("Ingrese la opcion elegida: \n")
+		fmt.Println("\n Ingrese la opcion elegida: ")
+		fmt.Println("1. AGREGAR PACIENTE")
+		fmt.Println("2. CONSULTAR LISTADO - ATENDER PACIENTES")
+		fmt.Println("3. FINALIZAR")
 		/*in := bufio.NewReader(os.Stdin)
 		opcion, err := in.ReadString('\n')
 
@@ -100,37 +103,37 @@ func main() {
 		switch input {
 
 		case "1":
-			fmt.Println("Entró al CASE 1")
+			fmt.Println("Entró al CASE 1 \n")
 			//LEEREMOS EL NOMBRE DEL PACIENTE
-			fmt.Println("Ingrese nombre del paciente: \n")
+			fmt.Println("Ingrese nombre del paciente: ")
 			in := bufio.NewReader(os.Stdin)
 			nuevoPacienteNombre, err := in.ReadString('\n')
 			if err != nil {
 				fmt.Println("Hay un error al leer el nombre del paciente.")
 			}
 			//LEEREMOS EL DOCUMENTO DE IDENTIFICACION DEL PACIENTE
-			fmt.Println("Ingrese identificación del paciente: \n")
+			fmt.Println("Ingrese identificación del paciente: ")
 			in1 := bufio.NewReader(os.Stdin)
 			nuevoPacienteId, err := in1.ReadString('\n')
 			if err != nil {
 				fmt.Println("Hay un error al leer el nombre del paciente.")
 			}
 			//LEEREMOS LOS SINTOMAS DEL PACIENTE
-			fmt.Println("Ingrese sintomas del paciente: \n")
+			fmt.Println("Ingrese sintomas del paciente: ")
 			in2 := bufio.NewReader(os.Stdin)
 			nuevoPacienteSintomas, err := in2.ReadString('\n')
 			if err != nil {
 				fmt.Println("Hay un error al leer el nombre del paciente.")
 			}
 			//LEEREMOS LA HORA DE LLEGADA DLE PACIENTE
-			fmt.Println("Ingrese hora de llegada del paciente: \n")
+			fmt.Println("Ingrese hora de llegada del paciente: ")
 			in3 := bufio.NewReader(os.Stdin)
 			nuevoPacienteHora, err := in3.ReadString('\n')
 			if err != nil {
 				fmt.Println("Hay un error al leer el nombre del paciente.")
 			}
 			//LEEREMOS A QUE EPS PERTENECE EL PACIENTE
-			fmt.Println("Ingrese EPS del paciente: \n")
+			fmt.Println("Ingrese EPS del paciente: ")
 			in4 := bufio.NewReader(os.Stdin)
 			nuevoPacienteEPS, err := in4.ReadString('\n')
 			if err != nil {
@@ -142,7 +145,8 @@ func main() {
 			parar++
 
 		case "2":
-			fmt.Println("Entró al CASE 2")
+			fmt.Println("Entró al CASE 2 \n")
+			fmt.Println("LISTANDO PACIENTES \n")
 			contador := cola.contador
 			for i := 0; i < contador; i++ {
 				fmt.Println(cola.atender())
